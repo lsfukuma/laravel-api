@@ -11,7 +11,7 @@
                         {{Auth::user()->api_token}}
                     </h5>
                 @else
-                    <form class="" action="{{ route('generate-token') }}" method="post">
+                    <form action="{{ route('generate-token') }}" method="post">
                         @csrf
                         <input class="btn btn-md btn-info m-2" type="submit" value="API token">
                     </form>
